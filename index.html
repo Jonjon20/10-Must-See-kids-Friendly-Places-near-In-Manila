@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kid-Friendly Places Near Manila</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to bottom right, #a8e6ff, #f7faff);
+        }
+        header {
+            background: #4a90e2;
+            color: white;
+            padding: 25px;
+            text-align: center;
+            animation: fadeIn 1s ease-in-out;
+        }
+        nav {
+            background: #333;
+            padding: 12px;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            animation: slideDown 0.8s ease;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            padding: 20px;
+            max-width: 900px;
+            margin: auto;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            margin-top: 25px;
+            animation: fadeIn 1s ease;
+        }
+
+        .place-card {
+            margin-bottom: 25px;
+            padding: 15px;
+            border-radius: 12px;
+            background: #f0f7ff;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+            animation: popIn 0.5s ease;
+        }
+        .place-card img {
+            width: 100%;
+            border-radius: 12px;
+            margin-bottom: 10px;
+        }
+        button {
+            padding: 10px 15px;
+            border: none;
+            border-radius: 8px;
+            background: #4a90e2;
+            color: white;
+            cursor: pointer;
+            font-size: 14px;
+            margin-top: 8px;
+        }
+        button:hover {
+            background: #346fb8;
+        }
+        .info {
+            display: none;
+            margin-top: 10px;
+            background: white;
+            padding: 10px;
+            border-radius: 8px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        @keyframes slideDown {
+            from { transform: translateY(-20px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+        @keyframes popIn {
+            from { transform: scale(0.9); opacity: 0; }
+            to { transform: scale(1); opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Top 10 Kid-Friendly Places Near Manila</h1>
+        <p>Fun destinations perfect for family bonding!</p>
+    </header>
+
+    <nav>
+        <a href="#places">Places</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <section class="container" id="places">
+        <h2>Kid-Friendly Destinations</h2>
+
+        <!-- Place Cards Start -->
+
+        <div class="place-card">
+            <img src="oceanpark.jpg">
+            <h3>1. Manila Ocean Park</h3>
+            <button onclick="toggleInfo('info1')">Show Info</button>
+            <div class="info" id="info1"><b>Manila Ocean Park is a marine theme park in Manila featuring the Oceanarium, which houses 14,000 marine creatures in a 220° underwater walkway tunnel.
+The park also offers other attractions like the Trails to Antarctica penguin park, live animal shows including sea lion and bird shows, a Fish Spa, and interactive encounters like feeding penguins or a Shark and Ray
+Encounter.<br>
+It is a popular family-friendly destination for education and entertainment. 
+Main attractions
+<br>
+</br>
+</br>
+Oceanarium: Walk through a 55-meter tunnel with a 220-degree view of Southeast Asian marine life, including sharks and rays.<br>
+</br>
+</br>
+Trails to Antarctica: A park featuring live Humboldt penguins, including a breeding program and a "snow village".<br>
+</br>
+</br>
+Sea Lion Show: A show with sea lions that combines entertainment with conservation messages.
+<br>
+</br>
+</br>
+All Star Bird Show: A show featuring various birds performing stunts and tricks.<br>
+ 
+</br>
+</br>
+<br>
+<b>Other activities and experiences</b><br>
+<br>
+</br>
+</br>
+Fish Spa: A unique experience where small fish nibble on dead skin from your feet.<br>
+
+Shark and Ray Encounter: A chance to get closer to sharks and rays.<br>
+
+Penguin Feeding: An opportunity to feed the park's Humboldt penguins.<br>
+
+World of Creepy Crawlies: An exhibit showcasing frogs, insects, and spiders.<br>
+
+Souvenir shops: Various shops offer keepsakes like stuffed animals, shirts, and keychains.<br> 
+
+
+<br>
+Practical information
+<br>
+<br>
+<b>Location</b>: Behind the Quirino Grandstand in Rizal Park, Manila.<br>
+<b>Children</b>: Admission is free for children 2 feet and below; those taller require a ticket.<br>
+<b>Pets</b>: Not allowed inside the park to prevent cross-infection with the park's animals.<br>
+<b>Wheelchairs</b>: Available for a refundable deposit of a valid ID, depending on availability. .</div>
+        </div>
+
+        <div class="place-card">
+            <img src="Museo.jpg" />
+            <h3>2. Museo Pambata</h3>
+            <button onclick="toggleInfo('info2')">Show Info</button>
+            <div class="info" id="info2">Museo Pambata is the Philippines' first interactive children's museum, located in a heritage building on Roxas Boulevard in Manila. Opened in 1994, its mission is to inspire children to learn through hands-on exhibits on topics like Filipino culture, history, and the environment. The museum offers an alternative to traditional classrooms, with programs, events, and guided tours designed to make learning fun and engaging.
+</br>
+</br>
+</br>
+</br> 
+About the museum
+</br>
+</br>
+What it is: An interactive, hands-on museum for children.
+</br>
+</br>
+Mission: To provide children with educational programs that promote their holistic
+ welfare and rights, empowering them through experience and fun.
+</br>
+</br>
+Founder: Nina Lim-Yuson, an early childhood educator.
+</br>
+</br>
+Location: A heritage building on Roxas Boulevard in Manila, near Rizal Park. 
+Exhibits and programs
+</br>
+</br>
+Interactive exhibits covering topics such as:
+</br>
+</br>
+Filipino culture and history
+The environment
+Health
+Science
+Live storytelling sessions in the "Balay Yatu".
+Guided tours that allow children to explore the exhibits.
+A library.
+Educational and fun activities for children.
+</br>
+</br> 
+Hours
+Tuesdays to Saturdays: 11 a.m. to 8:30 p.m.
+Sundays: 11 a.m. to 7:30 p.m.
+Mondays: Closed
+Note: Hours may vary, so it is recommended to check their social media or website for updates, such as temporary closures due to weather events. .</div>
+        </div>
+
+        <div class="place-card">
+            <img src="intra.jpg" />
+            <h3>3. Intramuros</h3>
+            <button onclick="toggleInfo('info3')">Show Info</button>
+            <div class="info" id="info3">Intramuros is the historic walled city of Manila, built by the Spanish in the 16th century to serve as the center of political, religious, and military power in the Philippines. It is known as the "Walled City" because it is surrounded by high walls, bastions, and moats, and is a National Historical Landmark and a UNESCO World Heritage Site. Today, Intramuros is a major tourist attraction where visitors can see historic sites like Fort Santiago and San Agustin Church, walk on the old city walls, and experience a mix of history and modern life.  
+</br>
+</br>
+</br>
+</br>
+History: Built by the Spanish starting in 1571, Intramuros served as the seat of government for over 300 years. Its walls were constructed to protect the city from invaders, and its streets once housed only the Spanish elite. The area suffered heavy damage during World War II but has since been partially restored.
+</br>
+</br> 
+Key landmarks:
+</br>
+</br>
+Fort Santiago: A citadel that was once a military defense and a prison for national hero José Rizal before his execution. 
+</br>
+</br>
+San Agustin Church: A UNESCO World Heritage Site and one of the oldest stone churches in the Philippines. 
+</br>
+</br>
+Manila Cathedral: A major religious building located in Plaza Roma. 
+</br>
+</br>
+</br>
+</br>
+Things to do:
+</br>
+</br>
+Walk along the old city walls for a different perspective of the area. 
+Take a tour via kalesa (horse-drawn carriage). 
+Explore the museums, art galleries, and souvenir shops that are now nestled within the restored buildings and ruins. 
+Walk or cycle through the cobblestone streets and plazas. 
+Visit the historic Fort Santiago, which has dungeons and historical exhibits. </div>
+        </div>
+
+        <div class="place-card">
+            <img src="la.jpg" />
+            <h3>4. La Mesa Eco Park</h3>
+            <button onclick="toggleInfo('info4')">Show Info</button>
+            <div class="info" id="info4">La Mesa Ecopark is a 33-hectare nature reserve in Quezon City that offers both recreational activities and environmental education. It is open Tuesday to Sunday, with a 33-hectare park featuring activities like bird watching, nature walks, and wall climbing, and you can rent bikes or have picnics. Admission is free for Quezon City residents with proper ID, while non-residents pay PHP 20. Advance online reservations are required. 
+</br>
+</br>
+</br>
+</br>
+Location and hours
+</br>
+</br>
+Location: East Fairview Subdivision, Novaliches, Quezon City
+</br>
+</br>
+Operating Hours: Tuesday to Sunday, 7 AM to 4 PM
+</br>
+</br>
+Holiday hours: During Christmas season, hours may be extended and online registration may not be required. 
+</br>
+</br>
+</br>
+</br>
+Admission
+</br>
+</br>
+Quezon City residents: Free with valid QCitizen ID or government-issued ID
+</br>
+</br>
+Non-QC residents: PHP 20 (as of late 2024)
+</br>
+</br>
+Reservations: Advance online reservations are required via the Manila Water Foundation website. 
+Activities and amenities
+</br>
+</br>
+Outdoor activities: Wall climbing, rappelling, archery tag, and nature walks
+</br>
+</br>
+Recreation: Jogging, cycling (with bike rentals available), picnics, and company teambuilding
+</br>
+</br>
+Nature: Bird watching and exploring the park's biodiversity
+</br>
+</br>
+Other: The park also has specific areas for pre-nuptial and commercial shoots. 
+Important notes
+</br>
+</br>
+The park's management recently shifted to the Manila Water Foundation.
+</br>
+</br>
+The Ecopark is a successful rehabilitation project and a key part of the greater La Mesa Watershed, which is the primary water source for Metro Manila.
+Future developments and activities are planned to align with the park's ecological mission. </div>
+        </div>
+
+        <div class="place-card">
+            <img src="pa.jpg" />
+            <h3>5. Pasig Rainforest Park (RAVE)</h3>
+            <button onclick="toggleInfo('info5')">Show Info</button>
+            <div class="info" id="info5">Pasig Rainforest Park, also known as Rave Rainforest Park, is a public nature and adventure park in Pasig City, Philippines, featuring numerous attractions such as a mini-zoo, swimming pools, a boating lagoon, and a zip line. It was first opened in 1977 and was relaunched in 2013 with new facilities, with the aim of providing a recreational green space for the public. Entrance to the park is free, but there are minimal fees for most of the attractions, with discounts for Pasig residents. 
+</br>
+</br>
+About the park
+</br>
+</br>
+Location: Maybunga, Pasig City, Metro Manila, Philippines.
+</br>
+</br>
+Area: It spans approximately 8 hectares (20 acres).
+</br>
+</br>
+History: Opened in 1977, it was expanded and relaunched as RAVE Rainforest Park in 2013 with additional features.
+</br>
+</br>
+Management: Operated by the Pasig City Government through its City Environment and Natural Resources Office (CENRO).
+</br>
+</br>
+</br>
+</br> 
+Attractions and features
+</br>
+</br>
+Adventure and sports: Zip line, obstacle course, skatepark, swimming pools, basketball and tennis courts, and an obstacle course.
+</br>
+</br>
+Nature and wildlife: Mini-zoo, butterfly house, aviary, mammal sanctuary, reptile house, botanical garden, and flower fields.
+</br>
+</br>
+Leisure and recreation: Boating lagoon, train ride, picnic and camping grounds, and an amphitheater.
+</br>
+</br>
+Other amenities: Kiddie playground, maze garden, tree house, chess pavilion, fitness center, and a senior citizen's park.
+</br>
+</br>
+</br>
+</br> 
+Visitor information
+</br>
+</br>
+Entrance fee: Free to enter the park grounds, but most attractions require a separate, minimal fee.
+Discounts: Pasig residents receive discounted rates for the attractions.
+Food: Visitors can bring their own food and drinks, and there are also stores and picnic/cottage rentals available. </div>
+        </div>
+
+        <div class="place-card">
+            <img src="zoo.jpg" />
+            <h3>6. Manila Zoo</h3>
+            <button onclick="toggleInfo('info6')">Show Info</button>
+            <div class="info" id="info6">The Manila Zoo is a public zoo in Malate, Manila, that opened in 1959 and was renovated to reopen in 2022. It features over 550 animals, a botanical garden, a butterfly garden, and a Wildlife Rescue Center. It is open daily from 9:00 AM to 6:00 PM and is managed by the city government with a focus on wildlife preservation, education, and recreation. 
+</br>
+</br>
+Location and hours
+</br>
+</br>
+Location: Adriatico Street, Malate, Manila
+</br>
+</br>
+Operating Hours: Daily, 9:00 AM to 6:00 PM (including weekends and holidays) 
+Attractions and features
+</br>
+</br>
+Animals: Home to over 550 specimens, including mammals, birds, and reptiles. Notable residents include the white tiger Kois and the Asian elephant Mali.
+</br>
+</br>
+Botanical Garden: Features over 10,000 plants and various gardens, such as a butterfly garden.
+Wildlife Rescue Center: A center that takes in injured and abandoned animals.
+</br>
+</br>
+Animal Museum: A museum is also available. 
+</br>
+</br>
+Management and mission
+</br>
+</br>
+</br>
+</br>
+Management: Managed by the Manila City Government's Public Recreation Bureau.
+Focus: Wildlife preservation, education, and recreation. 
+History
+Opened: July 25, 1959
+Renovated: Reopened to the public on November 21, 2022, after extensive renovations. </div>
+        </div>
+
+        <div class="place-card">
+            <img src="el.jpg" />
+            <h3>7. Lyger Animal Sanctuary (Rizal)</h3>
+            <button onclick="toggleInfo('info7')">Show Info</button>
+            <div class="info" id="info7">Basic Info
+
+Location: Sitio Matagbak, Barangay Bagumbayan, Pililla, Rizal. 
+</br>
+</br>
+Contact: (02) 7502‑4294. 
+pilillarizal.gov.ph
+</br>
+</br>
+Operating Hours: Daily from ~ 8:30 AM to 5:00 PM (some sources say up to 5:30 PM). 
+</br>
+</br>
+Entrance Fee: ~ ₱200 for adults; ₱160 for senior citizens and kids aged 2–7; kids under 2 are usually free. 
+</br>
+</br>
+What to See / Attractions
+</br>
+The sanctuary is known for ligers — a hybrid cross between a lion and a tiger. 
+</br>
+</br>
+They also reportedly have white lions, different kinds of tigers (e.g., Bengal, “strawberry”/golden tabby), a puma, as well as more “exotic” or less common animals. 
+</br>
+</br>
+Other animals: camels, mini‑horses, orangutans, birds (like peacocks), donkeys, and more. 
+</br>
+There’s a small aquarium on site. 
+</br>
+</br>
+Visitors can feed certain animals: food for animals (like chicken legs for tigers) is sold on site. 
+</br>
+</br>
+Photo ops: People have taken pictures with animals like an albino python (for a fee). 
+</br>
+</br>
+Visitor Experience & Tips
+
+According to TripAdvisor and other reviews, it’s not as big or “fancy” as big city zoos like Avilon Zoo, but it’s special because of its “rare kinds” of animals. 
+</br>
+</br>
+One reviewer said a typical visit can take up to about an hour, depending on how much you explore. 
+</br>
+</br>
+They note that feeding tigers costs extra (for chicken legs) and other animals like the camel, donkey, and orangutan are very interactive. 
+</br>
+</br>
+
+
+Things to Know / Consider
+</br>
+</br>
+
+Because it's a “sanctuary” or “holding facility” (not just a typical zoo), some people caution that it's relatively small and that animal conditions might vary. 
+</br>
+</br>
+If planning to visit, bring cash for entrance and for animal feed or photo‑ops, since these are extra.
+</br>
+</br>
+Wear comfortable shoes and prepare for walking — the place is not super large, but there is enough to explore.
+</br>
+</br>
+Given that feeding animals is allowed, check with the staff about what is permitted and what’s safe.
+</br>
+</br>
+Why Visit / What Makes It Special
+</br>
+</br>
+Unique Animals: Seeing a “lyger” (lion-tiger hybrid) is rare, and it's one of the biggest draws.
+</br>
+</br>
+Interactive Experience: More opportunities for feeding or close encounters (depending on animal) than in some larger, more regulated zoos.
+</br>
+</br>
+Local Tourism Spot: It’s a notable attraction in Pililla, Rizal, so combining the visit with other local spots (like Pililla Wind Farm) makes for a good day trip.</div>
+        </div>
+
+        <div class="place-card">
+            <img src="sky.jpg" />
+            <h3>8. Sky Ranch Tagaytay</h3>
+            <button onclick="toggleInfo('info8')">Show Info</button>
+            <div class="info" id="info8">Sky Ranch Tagaytay is a 5-hectare amusement park located on the Tagaytay-Nasugbu Highway, known for its views of Taal Lake and Volcano. It offers a mix of thrilling rides like the Sky Eye Ferris Wheel, Drop Tower, and Super Viking, along with family-friendly options and activities. In addition to rides, the park provides dining options and other attractions.
+</br>
+</br>  
+Key features and attractions
+</br>
+</br>
+Rides:
+</br>
+</br>
+Sky Eye Ferris Wheel: A 63-meter Ferris wheel with 32 air-conditioned gondolas, offering panoramic views of Taal Lake.
+</br>
+</br> 
+Thrill rides: Sky Cruiser, Super Viking, Drop Tower, and Log Coaster.
+</br>
+</br> 
+Family-friendly rides: Carousel, Sky Cruiser, Express Train, and others. 
+</br>
+</br>
+Other activities: Zipline, games, and the Ultra Play area with 4D simulators and pedal karts.
+</br>
+</br> 
+Scenery: The park is situated on a high-altitude cliff, providing scenic views of Tagaytay, Batangas, and Taal Volcano. 
+</br>
+</br>
+Dining: Various restaurants and snack kiosks are available within the park.
+</br>
+</br> 
+Location: It is located next to the Taal Vista Hotel along the Tagaytay-Nasugbu Highway. 
+Best time to visit: Weekdays, especially Wednesday through Friday, are less crowded than weekends and holidays. 
+</br>
+</br>
+</br>
+</br>
+What to know before you go
+</br>
+</br>
+Tickets: You can purchase ride tickets individually or get a Ride-All-You-Can pass online, which may be a better value and allow you to skip lines. 
+Entrance fee: A separate entrance fee is required to enter the park.
+Crowds: Expect larger crowds and longer wait times on weekends and during holidays. 
+Customer service: Some visitors have reported that customer service can be inconsistent. </div>
+        </div>
+
+        <div class="place-card">
+            <img src="dream.jpg" />
+            <h3>9. DreamPlay (City of Dreams)</h3>
+            <button onclick="toggleInfo('info9')">Show Info</button>
+            <div class="info" id="info9">Dream Play" can refer to a theatrical style and the indoor theme park at City of Dreams Manila. Theatrical "dream plays" present a surreal, dream-like narrative using fluid transitions and fantasy to explore themes of the subconscious, while the theme park is a family-friendly, interactive experience featuring DreamWorks characters and activities like the Afro Circus and Shrek's Swamp Stomp.
+<br>
+<br>
+Theatrical "A Dream Play"
+<br>
+<br>
+What it is: A theatrical form where the narrative unfolds in a dream-like state, characterized by surreal imagery and a fluid structure.
+<br>
+<br>
+Key aspects: Breaks conventional narrative, uses lighting and sound to create atmosphere, and encourages audience interpretation.
+<br>
+<br>
+Notable example: August Strindberg's play A Dream Play, which explores themes of human suffering and disillusionment through the story of the Daughter of Indra. 
+DreamPlay theme park
+<br>
+<br>
+What it is: An indoor, interactive theme park inspired by DreamWorks films and characters, located in the City of Dreams Manila.
+<br>
+<br>
+Activities: Features a variety of attractions, including the Afro Circus, Shrek's Swamp Stomp, Fast as Lightning Kung Fu Fighting, and a Dream Theater.
+Dress code: The park is designed for active play, so guests are advised to wear comfortable clothing and closed-toe shoes.
+<br>
+<br>
+Tickets: Admission tickets can be purchased online through sites like Klook and may be subject to height and age restrictions for certain attractions. </div>
+        </div>
+
+        <div class="place-card">
+            <img src="bon.jpg" />
+            <h3>10. Bonifacio Shrine / Heroes Park</h3>
+            <button onclick="toggleInfo('info10')">Show Info</button>
+            <div class="info" id="info10">The Bonifacio Shrine, also known as the Bonifacio and the Katipunan Revolution Monument, is a public park in Ermita, Manila, dedicated to revolutionary hero Andrés Bonifacio and the Philippine Revolution. The shrine's centerpiece is a 1998 monument by Eduardo Castrillo, depicting Bonifacio's life and role in the revolution. It also features the Kartilya ng Katipunan, a memorial wall for victims of the Martial Law era, and various other markers related to the Katipunan. 
+</br>
+</br>
+Key features and information
+</br>
+</br>
+Location: Ermita, Manila, near the Manila City Hall.
+</br>
+</br>
+Monument: A 1998 sculpture by Eduardo Castrillo that shows Bonifacio from his childhood to his leadership in the revolution.
+</br>
+</br>
+Kartilya ng Katipunan: The Katipunan's Code of Conduct, written by Emilio Jacinto, is inscribed on the back of the monument.
+</br>
+</br>
+Martial Law Memorial Wall: A wall commemorating the victims of the Martial Law era was inaugurated in 2006 within the park.
+</br>
+</br>
+Other features: The park also contains different versions of the KKK flags and, following a rehabilitation, a central fountain.
+</br>
+</br> 
+Recent history
+</br>
+</br>
+Rehabilitation: A major clean-up and rehabilitation project was completed in 2019 under Mayor Isko Moreno, which included repainting the monument, adding a fountain, and planting new flora.
+Significance: The rehabilitation helped restore the shrine's dignity and renewed its status as a tourist and historical attraction. 
+Other Bonifacio monuments
+The name "Bonifacio" is widely used in the Philippines, with many places, schools, and streets named after him.
+A separate Bonifacio Monument is located in Caloocan City.
+There is also a Bonifacio Shrine in Cavite City which is a separate historical site related to the execution of Bonifacio. </div>
+        </div>
+
+        <!-- Place Cards End -->
+    </section>
+
+    <section class="container" id="contact">
+        <h2>Contact Us</h2>
+        <p>Email: bellinbrentgmail.com</p>
+        <p>Facebook: Brent Bellin</p>
+    </section>
+
+    <footer style="text-align:center; padding:15px; background:#4a90e2; color:white; margin-top:40px;">
+        © 2025 Kid-Friendly Manila Guide
+    </footer>
+
+    <script>
+        function toggleInfo(id) {
+            const info = document.getElementById(id);
+            info.style.display = info.style.display === "none" || info.style.display === "" ? "block" : "none";
+        }
+    </script>
+</body>
+</html>
